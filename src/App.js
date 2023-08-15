@@ -1,13 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import AppRouter from './router/AppRouter';
+import { ThemeProvider } from 'styled-components';
+import { theme } from './styles/theme';
+import { GlobalStyles } from './styles/Global.styles';
 
 function App() {
   return (
-    <div>
-      <header>
-        Hi!
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <AppRouter />
+    </ThemeProvider>
   );
 }
 
