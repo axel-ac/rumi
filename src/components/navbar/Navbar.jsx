@@ -1,9 +1,14 @@
-
+import { Logo, Menu, MenuLink, Nav } from "./Navbar.style";
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
-  )
-}
+    <Nav justify="space-between">
+      <Logo to="/">Rumi</Logo>
+      <Menu>
+        <MenuLink to="/">Home</MenuLink>
+      </Menu>
+    </Nav>
+  );
+};
 
-export default Navbar
+export default Navbar;
